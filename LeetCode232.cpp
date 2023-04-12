@@ -16,20 +16,18 @@ class MyQueue {
                 stIn.pop();
             }
         }
-        int result=stOut.top();
+        int result = stOut.top();
         stOut.pop();
         return result;
     }
 
     int peek() {
-        int res=this->pop();
+        int res = this->pop();
         stOut.push(res);
         return res;
     }
 
-    bool empty() {
-        return stIn.empty()&&stOut.empty();
-    }
+    bool empty() { return stIn.empty() && stOut.empty(); }
 };
 
 /**
