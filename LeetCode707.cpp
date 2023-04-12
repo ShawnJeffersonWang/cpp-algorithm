@@ -1,3 +1,4 @@
+// 设计链表
 class MyLinkedList {
    public:
     struct LinkedNode {

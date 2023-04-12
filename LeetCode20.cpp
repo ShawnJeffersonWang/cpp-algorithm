@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//有效的括号
 class Solution {
    public:
     bool isValid(string s) {
