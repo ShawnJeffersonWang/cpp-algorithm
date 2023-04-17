@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// 长度最小的子数组
 class Solution {
    public:
     int minSubArrayLen(int target, vector<int>& nums) {

@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// 二分查找
 class Solution {
    public:
     int search(vector<int>& nums, int target) {

@@ -1,3 +1,4 @@
+// 移除链表元素
 struct ListNode {
     int val;
     ListNode* next;
