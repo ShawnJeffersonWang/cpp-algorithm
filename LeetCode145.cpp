@@ -1,5 +1,4 @@
-#include <stack>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 // Definition for a binary tree node.
 struct TreeNode {
@@ -11,10 +10,29 @@ struct TreeNode {
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
+// 二叉树的后序遍历
+
+// 递归法
+class Solution {
+   public:
+    void traversal(TreeNode* cur, vector<int>& vec) {
+        if (cur == nullptr)
+            return;
+        traversal(cur->left, vec);
+        traversal(cur->right, vec);
+        vec.push_back(cur->val);
+    }
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> result;
+        traversal(root, result);
+        return result;
+    }
+};
+
 // 迭代法
 class Solution {
    public:
-    vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> postorderTraversal(TreeNode* root) {
         stack<TreeNode*> st;
         vector<int> result;
         if (root == nullptr)
@@ -24,11 +42,12 @@ class Solution {
             TreeNode* node = st.top();
             st.pop();
             result.push_back(node->val);
-            if (node->right)
-                st.push(node->right);
             if (node->left)
                 st.push(node->left);
+            if (node->right)
+                st.push(node->right);
         }
+        reverse(result.begin(), result.end());
         return result;
     }
 };
