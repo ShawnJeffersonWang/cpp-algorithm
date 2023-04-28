@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+// 两数之和
+// 暴力解法
 class Solution {
    public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -13,7 +15,7 @@ class Solution {
         return {};
     }
 };
-
+// 哈希法
 class Solution {
    public:
     vector<int> twoSum(vector<int>& nums, int target) {
