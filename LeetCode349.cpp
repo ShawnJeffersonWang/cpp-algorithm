@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// 两个数据的交集
 class Solution {
    public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
