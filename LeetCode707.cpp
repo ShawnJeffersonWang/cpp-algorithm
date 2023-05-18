@@ -1,13 +1,13 @@
-// 设计链表
+#include <bits/stdc++.h>
+using namespace std;
 class MyLinkedList {
    public:
     struct LinkedNode {
         int val;
         LinkedNode* next;
-        LinkedNode() : val(0), next(nullptr){};
-        LinkedNode(int val) : val(val), next(nullptr){};
+        LinkedNode() : val(0), next(nullptr) {}
+        LinkedNode(int val) : val(val), next(nullptr) {}
     };
-
     MyLinkedList() {
         _dummyHead = new LinkedNode(0);
         _size = 0;
@@ -56,7 +56,7 @@ class MyLinkedList {
     }
 
     void deleteAtIndex(int index) {
-        if (index > _size - 1 || index < 0) {
+        if (index < 0 || index >= _size) {
             return;
         }
         LinkedNode* cur = _dummyHead;
@@ -70,8 +70,8 @@ class MyLinkedList {
     }
 
    private:
-    int _size;
     LinkedNode* _dummyHead;
+    int _size;
 };
 
 /**
