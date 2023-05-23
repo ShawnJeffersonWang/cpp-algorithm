@@ -46,7 +46,7 @@ class Solution {
                                postorder, leftPostorderBegin, leftPostorderEnd);
         root->right =
             traversal(inorder, rightInorderBegin, rightInorderEnd, postorder,
-                      leftPostorderBegin, rightPostorderEnd);
+                      rightPostorderBegin, rightPostorderEnd);
         return root;
     }
 
