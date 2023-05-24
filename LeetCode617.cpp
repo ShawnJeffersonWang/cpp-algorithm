@@ -10,6 +10,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
+// 合并二叉树
 // 递归法
 class Solution {
    public:
