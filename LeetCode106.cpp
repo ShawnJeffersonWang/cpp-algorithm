@@ -10,6 +10,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode* left, TreeNode* right)
         : val(x), left(left), right(right) {}
 };
+/*
 // 从中序与后序遍历序列构造二叉树
 class Solution {
    private:
@@ -48,7 +49,7 @@ class Solution {
             return NULL;
         return traversal(inorder, postorder);
     }
-};
+};*/
 // 使用下标分割数组
 class Solution {
    private:
@@ -98,3 +99,11 @@ class Solution {
                          postorder.size());
     }
 };
+
+int main() {
+    Solution s;
+    vector<int> inorder = {8, 4, 15, 12, 7};
+    vector<int> postorder = {8, 15, 7, 12, 4};
+    s.buildTree(inorder, postorder);
+    return 0;
+}
