@@ -12,6 +12,7 @@ struct TreeNode {
         : val(x), left(left), right(right) {}
 };
 // 路径总和
+// 递归法
 class Solution {
    private:
     bool traversal(TreeNode* cur, int count) {
@@ -39,5 +40,33 @@ class Solution {
         if (root == NULL)
             return false;
         return traversal(root, targetSum - root->val);
+    }
+};
+
+// 迭代法
+class Solution {
+   public:
+    bool hasPathSum(TreeNode* root, int targetSum) {
+        if (root == NULL)
+            return false;
+        stack<pair<TreeNode*, int>> st;
+        st.push(pair<TreeNode*, int>(root, root->val));
+        while (!st.empty()) {
+            pair<TreeNode*, int> node = st.top();
+            st.pop();
+            if (!node.first->left && !node.first->right &&
+                node.second == targetSum) {
+                return true;
+            }
+            if (node.first->right) {
+                st.push(pair<TreeNode*, int>(
+                    node.first->right, node.second + node.first->right->val));
+            }
+            if (node.first->left) {
+                st.push(pair<TreeNode*, int>(
+                    node.first->left, node.second + node.first->left->val));
+            }
+        }
+        return false;
     }
 };
