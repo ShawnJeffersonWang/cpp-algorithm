@@ -11,6 +11,7 @@ struct TreeNode {
         : val(x), left(left), right(right) {}
 };
 // 二叉树的所有路径
+// 递归法
 class Solution {
    private:
     void traversal(TreeNode* cur, vector<int>& path, vector<string>& result) {
@@ -42,6 +43,35 @@ class Solution {
         vector<int> path;
         vector<string> result;
         traversal(root, path, result);
+        return result;
+    }
+};
+
+class Solution {
+   public:
+    vector<string> binaryTreePaths(TreeNode* root) {
+        stack<TreeNode*> treeSt;
+        stack<string> pathSt;
+        vector<string> result;
+        treeSt.push(root);
+        pathSt.push(to_string(root->val));
+        while (!treeSt.empty()) {
+            TreeNode* node = treeSt.top();
+            treeSt.pop();
+            string path = pathSt.top();
+            pathSt.pop();
+            if (!node->left && !node->right) {
+                result.push_back(path);
+            }
+            if (node->right) {
+                treeSt.push(node->right);
+                pathSt.push(path + "->" + to_string(node->right->val));
+            }
+            if (node->left) {
+                treeSt.push(node->left);
+                pathSt.push(path + "->" + to_string(node->left->val));
+            }
+        }
         return result;
     }
 };
