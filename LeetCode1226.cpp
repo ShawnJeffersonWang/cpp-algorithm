@@ -2,9 +2,9 @@
 using namespace std;
 // 限定就餐策略
 // 资源分级算法（Hierarchical Resource Allocation Algorithm）
-class DiningPhilosophers {
+class DiningPhilosophers1 {
    public:
-    DiningPhilosophers() {}
+    DiningPhilosophers1() {}
 
     void wantsToEat(int philosopher,
                     function<void()> pickLeftFork,
@@ -36,9 +36,9 @@ class DiningPhilosophers {
     std::mutex lock[5];
 };
 // 同时拿起左右叉子
-class DiningPhilosophers {
+class DiningPhilosophers2 {
    public:
-    DiningPhilosophers() {}
+    DiningPhilosophers2() {}
 
     void wantsToEat(int philosopher,
                     function<void()> pickLeftFork,
@@ -89,9 +89,9 @@ class Semaphore {
     std::condition_variable cv_;
     int count_;
 };
-class DiningPhilosophers {
+class DiningPhilosophers3 {
    public:
-    DiningPhilosophers() { guid.Set(4); }
+    DiningPhilosophers3() { guid.Set(4); }
 
     void wantsToEat(int philosopher,
                     function<void()> pickLeftFork,
@@ -119,9 +119,9 @@ class DiningPhilosophers {
     Semaphore guid;
 };
 
-class DiningPhilosophers {
+class DiningPhilosophers4 {
    public:
-    DiningPhilosophers() {}
+    DiningPhilosophers4() {}
 
     void wantsToEat(int philosopher,
                     function<void()> pickLeftFork,

@@ -2,7 +2,7 @@
 using namespace std;
 // 最大子数组和
 // 贪心解法
-class Solution {
+class Solution1 {
    public:
     int maxSubArray(vector<int>& nums) {
         int result = INT32_MIN;
@@ -19,7 +19,7 @@ class Solution {
     }
 };
 // 动态规划
-class Solution {
+class Solution2 {
    public:
     int maxSubArray(vector<int>& nums) {
         if (nums.size() == 0)

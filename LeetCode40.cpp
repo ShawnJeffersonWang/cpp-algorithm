@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 // 组合总和II
-class Solution {
+class Solution1 {
    private:
     vector<vector<int>> result;
     vector<int> path;
@@ -39,7 +39,7 @@ class Solution {
     }
 };
 // 使用startIndex去重
-class Solution {
+class Solution2 {
    public:
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {}
 };

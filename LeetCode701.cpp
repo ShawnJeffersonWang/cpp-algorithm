@@ -12,7 +12,7 @@ struct TreeNode {
 };
 // 二叉搜索树中的插入操作
 // 递归法
-class Solution {
+class Solution1 {
    public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
         if (root == NULL) {
@@ -27,7 +27,7 @@ class Solution {
     }
 };
 // 迭代法
-class Solution {
+class Solution2 {
    public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
         if (root == NULL) {

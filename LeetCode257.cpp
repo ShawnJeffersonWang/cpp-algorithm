@@ -12,7 +12,7 @@ struct TreeNode {
 };
 // 二叉树的所有路径
 // 递归法
-class Solution {
+class Solution1 {
    private:
     void traversal(TreeNode* cur, vector<int>& path, vector<string>& result) {
         path.push_back(cur->val);
@@ -47,7 +47,7 @@ class Solution {
     }
 };
 
-class Solution {
+class Solution2 {
    public:
     vector<string> binaryTreePaths(TreeNode* root) {
         stack<TreeNode*> treeSt;

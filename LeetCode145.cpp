@@ -13,7 +13,7 @@ struct TreeNode {
 // 二叉树的后序遍历
 
 // 递归法
-class Solution {
+class Solution1 {
    public:
     void traversal(TreeNode* cur, vector<int>& vec) {
         if (cur == nullptr)
@@ -30,7 +30,7 @@ class Solution {
 };
 
 // 迭代法
-class Solution {
+class Solution2 {
    public:
     vector<int> postorderTraversal(TreeNode* root) {
         stack<TreeNode*> st;

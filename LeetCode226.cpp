@@ -12,7 +12,7 @@ struct TreeNode {
 };
 
 // 递归法
-class Solution {
+class Solution1 {
    public:
     TreeNode* invertTree(TreeNode* root) {
         if (root == nullptr) {
@@ -26,7 +26,7 @@ class Solution {
 };
 
 // 迭代法模拟前序遍历
-class Solution {
+class Solution2 {
    public:
     TreeNode* invertTree(TreeNode* root) {
         if (root == nullptr)
@@ -47,7 +47,7 @@ class Solution {
 };
 
 // 层序遍历
-class Solution {
+class Solution3 {
    public:
     TreeNode* invertTree(TreeNode* root) {
         queue<TreeNode*> que;

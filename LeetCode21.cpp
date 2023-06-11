@@ -10,12 +10,12 @@ struct ListNode {
 };
 // 合并两个有序链表
 // 递归法
-class Solution {
+class Solution1 {
    public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {}
 };
 // 迭代法
-class Solution {
+class Solution2 {
    public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         ListNode* preHead = new ListNode(-1);

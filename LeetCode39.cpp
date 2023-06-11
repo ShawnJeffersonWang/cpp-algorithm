@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 // 组合总和
-class Solution {
+class Solution1 {
    private:
     vector<vector<int>> result;
     vector<int> path;
@@ -33,7 +33,7 @@ class Solution {
 };
 
 // 剪枝优化
-class Solution {
+class Solution2 {
    private:
     vector<vector<int>> result;
     vector<int> path;

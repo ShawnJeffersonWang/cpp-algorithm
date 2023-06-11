@@ -2,7 +2,7 @@
 using namespace std;
 // 单调递增的数字
 // 暴力解法
-class Solution {
+class Solution1 {
    private:
     bool checkNum(int num) {
         int max = 10;
@@ -27,7 +27,7 @@ class Solution {
     }
 };
 // 贪心解法
-class Solution {
+class Solution2 {
    public:
     int monotoneIncreasingDigits(int N) {
         string strNum = to_string(N);

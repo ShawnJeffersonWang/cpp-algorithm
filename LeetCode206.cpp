@@ -9,7 +9,7 @@ struct ListNode {
     ListNode(int x, ListNode* next) : val(x), next(next){};
 };
 
-class Solution {
+class Solution1 {
    public:
     ListNode* reverseList(ListNode* head) {
         ListNode* temp;
@@ -25,7 +25,7 @@ class Solution {
     }
 };
 
-class Solution {
+class Solution2 {
    public:
     ListNode* reverse(ListNode* pre, ListNode* cur) {
         if (cur == nullptr)

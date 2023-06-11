@@ -14,7 +14,7 @@ struct TreeNode {
 };
 // 二叉树的最大深度
 // 递归法
-class Solution {
+class Solution1 {
    public:
     int getDepth(TreeNode* root) {
         if (root == NULL)
@@ -28,7 +28,7 @@ class Solution {
 };
 
 // 迭代法
-class Solution {
+class Solution2 {
    public:
     int maxDepth(TreeNode* root) {
         if (root == NULL)

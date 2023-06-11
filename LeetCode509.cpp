@@ -2,7 +2,7 @@
 using namespace std;
 // 费波纳契数
 // 动态规划解法
-class Solution {
+class Solution1 {
    public:
     int fib(int n) {
         if (n <= 1)
@@ -17,7 +17,7 @@ class Solution {
     }
 };
 // 动态规划优化
-class Solution {
+class Solution2 {
    public:
     int fib(int n) {
         if (n <= 1)
@@ -34,7 +34,7 @@ class Solution {
     }
 };
 // 递归解法
-class Solution {
+class Solution3 {
    public:
     int fib(int n) {
         if (n <= 1)

@@ -13,7 +13,7 @@ struct TreeNode {
 };
 // 路径总和
 // 递归法
-class Solution {
+class Solution1 {
    private:
     bool traversal(TreeNode* cur, int count) {
         if (!cur->left && !cur->right && count == 0)
@@ -44,7 +44,7 @@ class Solution {
 };
 
 // 迭代法
-class Solution {
+class Solution2 {
    public:
     bool hasPathSum(TreeNode* root, int targetSum) {
         if (root == NULL)

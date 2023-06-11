@@ -13,7 +13,7 @@ struct TreeNode {
 // 对称二叉树
 
 // 递归法
-class Solution {
+class Solution1 {
    public:
     bool compare(TreeNode* left, TreeNode* right) {
         if (left == nullptr && right != nullptr) {
@@ -38,7 +38,7 @@ class Solution {
 };
 
 // 迭代法
-class Solution {
+class Solution2 {
    public:
     bool isSymmetric(TreeNode* root) {
         if (root == nullptr)

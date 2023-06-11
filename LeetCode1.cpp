@@ -2,7 +2,7 @@
 using namespace std;
 // 两数之和
 // 暴力解法
-class Solution {
+class Solution1 {
    public:
     vector<int> twoSum(vector<int>& nums, int target) {
         for (int i = 0; i < nums.size(); i++) {
@@ -16,7 +16,7 @@ class Solution {
     }
 };
 // 哈希法
-class Solution {
+class Solution2 {
    public:
     vector<int> twoSum(vector<int>& nums, int target) {
         std::unordered_map<int, int> map;

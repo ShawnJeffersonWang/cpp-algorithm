@@ -12,7 +12,7 @@ struct TreeNode {
 };
 // 合并二叉树
 // 递归法
-class Solution {
+class Solution1 {
    public:
     TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
         if (root1 == nullptr)
@@ -26,7 +26,7 @@ class Solution {
     }
 };
 // 迭代法
-class Solution {
+class Solution2 {
    public:
     TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
         if (root1 == nullptr)

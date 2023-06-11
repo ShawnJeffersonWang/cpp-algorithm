@@ -12,7 +12,7 @@ struct TreeNode {
 };
 /*
 // 从中序与后序遍历序列构造二叉树
-class Solution {
+class Solution1 {
    private:
     TreeNode* traversal(vector<int>& inorder, vector<int>& postorder) {
         if (postorder.size() == 0)
@@ -51,7 +51,7 @@ class Solution {
     }
 };*/
 // 使用下标分割数组
-class Solution {
+class Solution2 {
    private:
     TreeNode* traversal(vector<int>& inorder,
                         int inorderBegin,
@@ -101,7 +101,7 @@ class Solution {
 };
 
 int main() {
-    Solution s;
+    Solution2 s;
     vector<int> inorder = {8, 4, 15, 12, 7};
     vector<int> postorder = {8, 15, 7, 12, 4};
     s.buildTree(inorder, postorder);

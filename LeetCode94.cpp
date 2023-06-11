@@ -14,7 +14,7 @@ struct TreeNode {
 // 二叉树的中序遍历
 
 // 递归法
-class Solution {
+class Solution1 {
    public:
     void traversal(TreeNode* cur, vector<int>& vec) {
         if (cur == nullptr)
@@ -31,7 +31,7 @@ class Solution {
 };
 
 // 迭代法
-class Solution {
+class Solution2 {
    public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> result;
@@ -53,7 +53,7 @@ class Solution {
 };
 
 // 统一迭代法
-class Solution {
+class Solution3 {
    public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> result;
