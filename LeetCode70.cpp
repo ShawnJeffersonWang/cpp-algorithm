@@ -1,5 +1,5 @@
 #include <vector>
-class Solution {
+class Solution1 {
    public:
     int climbStairs(int n) {
         if(n<=1) return n;
@@ -11,4 +11,8 @@ class Solution {
         }
         return dp[n];
     }
+};
+
+class Solution2{
+    public:
 };
