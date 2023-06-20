@@ -15,5 +15,7 @@ class Solution1 {
 
 class Solution2{
     public:
-    
+    int climbStairs(int n){
+        
+    }
 };
