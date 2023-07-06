@@ -1,4 +1,5 @@
-
+#include <vector>
+using namespace std;
 //Definition for a binary tree node.
 struct TreeNode {
     int val;
@@ -10,6 +11,8 @@ struct TreeNode {
 };
 
 class Solution {
+    private:
+    vector<int> vec;
 public:
     bool isValidBST(TreeNode* root) {
 
