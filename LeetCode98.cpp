@@ -13,8 +13,15 @@ struct TreeNode {
 class Solution {
     private:
     vector<int> vec;
+    void traversal(TreeNode* root){
+        if(root==NULL) return;
+        traversal(root->left);
+        vec.push_back(root->val);
+
+    }
 public:
     bool isValidBST(TreeNode* root) {
+        vec.clear();
 
     }
 };
